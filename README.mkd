@@ -1,0 +1,20 @@
+Philadelphia Bike Rack Map
+==========
+This is a bike rack map for the Philadelphia.  It shows the bike racks from GIS on an interactive map.  It also contains a mobile version for iOS devices.
+
+Installation
+------------
+    $ git clone git@github.com:codeforamerica/phill-bikerack-map.git
+
+Requirements
+------------
+This uses the ArcGIS Javascript API which can be found here [http://help.arcgis.com/en/webapi/javascript/arcgis/help/jsapi_start.htm]
+
+We use the GitHub wiki for documentation.
+
+Submitting an Issue
+-------------------
+We use the GitHub issue tracker to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted.
+
+
+[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/philly-bikerack-map.png)](http://stats.codeforamerica.org/projects/philly-bikerack-map)
