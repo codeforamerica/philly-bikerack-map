@@ -33,19 +33,19 @@
 
       function init() {
         var initialExtent = new esri.geometry.Extent({
-          "xmin": -8401848.31378072,
-          "ymin": 4858589.25870394,
-          "xmax": -8323793.98086539,
-          "ymax": 4889506.17718086,
+          "xmin": 2557616.45757814,
+          "ymin": 207781.230364257,
+          "xmax": 2834147.13141866,
+          "ymax": 306565.784101792,
           "spatialReference": {
-            "wkid": 102100
+            "wkid": 2272
           }
         });
         map = new esri.Map("map", {
           extent: initialExtent
         });
 
-        var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.phila.gov/ArcGIS/rest/services/BaseMaps/MobileBase/MapServer");
+        var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.phila.gov/ArcGIS/rest/services/BaseMaps/GrayBase/MapServer");
         map.addLayer(tiledMapServiceLayer);
 
         var bikeRackLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://staging-gis.phila.gov/ArcGIS/rest/services/Streets/Bike_Racks/MapServer");
