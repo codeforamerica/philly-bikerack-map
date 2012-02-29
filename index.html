@@ -48,6 +48,13 @@
         var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.phila.gov/ArcGIS/rest/services/BaseMaps/GrayBase/MapServer");
         map.addLayer(tiledMapServiceLayer);
 
+        var bikeRouteLayer = new esri.layers.FeatureLayer("http://gis.phila.gov/ArcGIS/rest/services/PhilaOIT-GIS_Transportation/MapServer/0",{
+          mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
+          outFields: ["*"]
+        });
+
+        map.addLayer(bikeRouteLayer);
+
         var bikeRackLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://staging-gis.phila.gov/ArcGIS/rest/services/Streets/Bike_Racks/MapServer");
         map.addLayer(bikeRackLayer);
 
