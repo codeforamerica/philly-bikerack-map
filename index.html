@@ -63,7 +63,7 @@
         var content = "<b>Number of Racks</b>: ${NUM_RACKS} <br /><b>Type</b>: ${RACK_TYPE} ";
 
         var infoTemplate = new esri.InfoTemplate("<b>${LOCATION}</b>", content);
-        map.infoWindow.resize(225,85);
+        map.infoWindow.resize(190,65);
         var featureLayer = new esri.layers.FeatureLayer("http://staging-gis.phila.gov/ArcGIS/rest/services/Streets/Bike_Racks/MapServer/0",{
           mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
           outFields: ["LOCATION", "NUM_RACKS","RACK_TYPE","RACK_CAPAC"],
