@@ -60,7 +60,7 @@
 
         dojo.connect(map, "onLoad", function(evt) {
           //add a feature layer
-        var content = "<b>Number of Racks</b>: ${NUM_RACKS} <br /><b>Type</b>: ${RACK_TYPE} <br /><b>Capacity</b>: ${RACK_CAPAC} ";
+        var content = "<b>Number of Racks</b>: ${NUM_RACKS} <br /><b>Type</b>: ${RACK_TYPE} ";
 
         var infoTemplate = new esri.InfoTemplate("<b>${LOCATION}</b>", content);
         map.infoWindow.resize(225,85);
